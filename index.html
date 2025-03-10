@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>RSS Team TA</title>
+<title>RSS Team 1</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -21,11 +21,10 @@ body, html {
   background-size: cover;
   background-image: url("./img/mit.jpg");
   height: 30%;
-  /* max-height: 30%; */
 }
 
 .team_member {
-    width: 20%; /* Change this so you can fit x Team members in a row*/
+    width: 25%; /* Changed to 25% to fit 4 team members */
     float: left;
     padding: 0% 6px;
     min-height: 500px;
@@ -47,6 +46,16 @@ body, html {
     height: 200px;
     max-height: 200px;
     overflow: hidden;
+    object-fit: cover;
+}
+
+/* Add specific positioning for Shrika and Pyae's images */
+#shrika-img {
+    object-position: center 25%;
+}
+
+#pyae-img {
+    object-position: center 25%;
 }
 
 .w3-bar .w3-button {
@@ -55,124 +64,93 @@ body, html {
 </style>
 
 <body>
-<!-- If you change something in the Navbar you have to change it on each page (sit on top) -->
-<!-- MAKE SURE YOU GET THE RELATIVE PATHS RIGHT FOR THE NAV BAR!!!!-->
+<!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">RSS Team TA</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide">RSS Team 1</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">About</a>
       <a href="labs/" class="w3-bar-item w3-button"><i class="fa fa-folder"></i>Labs</a>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="w3-bar-item w3-button"><i class="fa fa-camera"></i>Videos</a>
       <a href="https://github.com/mit-rss" class="w3-bar-item w3-button"><i class="fa fa-github-square"></i>Github</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
-
-<!-- Sidebar on small screens when clicking the menu icon -->
+<!-- Sidebar on small screens -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close X</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
   <a href="labs/" onclick="w3_close()" class="w3-bar-item w3-button">Labs</a>
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" onclick="w3_close()" class="w3-bar-item w3-button">Videos</a>
   <a href="https://github.com/mit-rss" onclick="w3_close()" class="w3-bar-item w3-button">Github</a>
 </nav>
-<!-- End of repeated content on each page-->
 
-
-<!-- Header with full-height image -->
+<!-- Header -->
 <header class="title_img w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-bottommiddle w3-text-white w3-center">
-    <h1>Team TA!</h1>
-    <p><a href="https://youtu.be/xLZU6TcSmRo" style="width:100%" class="w3-button w3-white w3-opacity w3-hover-opacity-off">
-        Innovation starts somewhere, so why not let it start here?
+    <h1>RSS Team 1</h1>
+    <p><a href="#about" style="width:100%" class="w3-button w3-white w3-opacity w3-hover-opacity-off">
+        Meet our team!
     </a></p>
   </div>
 </header>
 
 <div class="w3-container w3-white" style="padding:5% 5%">
   <div class="w3-card team_member">
-      <img class="headshot" src="img/wall_e.jfif">
-      <h4>Tim Beaver</h4>
-      <p>tbeaver@mit.edu</p>
-      <p>These are some template bios; fill this in for each of your team members!
-      </p>
+      <img class="headshot" id="shrika-img" src="img/shrika.jpeg">
+      <h4>Shrika Eddula</h4>
+      <p>Computer Science + AI</p>
+      <p><a href="mailto:shrika@mit.edu">shrika@mit.edu</a></p>
+  </div>
+  <div class="w3-card team_member">
+      <img class="headshot" id="pyae-img" src="img/pyae.jpeg">
+      <h4>Pyae Sone Hmine</h4>
+      <p>Computer Engineering</p>
+      <p><a href="mailto:pyaesone@mit.edu">pyaesone@mit.edu</a></p>
+  </div>
+  <div class="w3-card team_member">
+      <img class="headshot" src="img/sammy.jpeg">
+      <h4>Sammy Krem</h4>
+      <p>Aerospace Engineering</p>
+      <p><a href="mailto:skrem@mit.edu">skrem@mit.edu</a></p>
   </div>
   <div class="w3-card team_member">
       <img class="headshot" src="img/r2.jpg">
-      <h4>Tim Beaver</h4>
-      <p>tbeaver@mit.edu</p>
-      <p>These are some template bios; fill this in for each of your team members!
-      </p>
-  </div>
-  <div class="w3-card team_member">
-      <img class="headshot" src="img/wall_e.jfif">
-      <h4>Tim Beaver</h4>
-      <p>tbeaver@mit.edu</p>
-      <p>These are some template bios; fill this in for each of your team members!
-      </p>
-  </div>
-  <div class="w3-card team_member">
-      <img class="headshot" src="img/r2.jpg">
-      <h4>Tim Beaver</h4>
-      <p>tbeaver@mit.edu</p>
-      <p>These are some template bios; fill this in for each of your team members!
-      </p>
-  </div>
-  <div class="w3-card team_member">
-      <img class="headshot" src="img/wall_e.jfif">
-      <h4>Tim Beaver</h4>
-      <p>tbeaver@mit.edu</p>
-      <p>These are some template bios; fill this in for each of your team members!
-      </p>
+      <h4>Sydney Matthews</h4>
+      <p>Aerospace Engineering</p>
   </div>
 </div>
 
-<!-- Contact Section -->
+<!-- About Section -->
 <div class="w3-container w3-grey" style="padding:5% 5%;text-align:center;" id="about">
   <div class="w3-card w3-white" style="width:100%">
     <h1>About Us</h1>
   </div>
   <div class="w3-cell w3-red" style="width:30%;float:left;min-height: 200px;">
-      <i class="fa fa-folder"></i> <!--Put an image here or something?-->
-      <p>Do something that is unique here. (You can change this to team values or something?)</p>
+      <i class="fa fa-rocket"></i>
+      <p>Combining expertise in Computer Science, AI, and Aerospace Engineering</p>
   </div>
   <div class="w3-cell w3-white" style="width:30%;margin-left:5%;float:left;min-height: 200px;">
-      <i class="fa fa-folder"></i><!--Put an image here or something?-->
-      <p>The TAs are not that unique, so we are just writing a lot of filler things here so we look cool.</p>
+      <i class="fa fa-users"></i>
+      <p>Collaborative team focused on innovative robotics solutions</p>
   </div>
   <div class="w3-cell w3-blue" style="width:30%;margin-left:5%;float:left;min-height: 200px;">
-      <i class="fa fa-folder"></i><!--Put an image here or something?-->
-      <p>Si vos es pulchellus frigus hanc: et admonitus in hoc genere digna est. It tristis et non dederint tibi. Benediximus</p>
+      <i class="fa fa-code"></i>
+      <p>Building the future of autonomous systems</p>
   </div>
 </div>
-
-
-</body>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>RSS Team 1 | MIT 2025</p>
 </footer>
 
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
 
