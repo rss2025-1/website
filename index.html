@@ -26,27 +26,34 @@ body, html {
 .team_member {
     width: 25%; /* Changed to 25% to fit 4 team members */
     float: left;
-    padding: 0% 6px;
-    min-height: 500px;
+    padding: 10px 15px;
+    min-height: 400px;
+    text-align: center;
 }
 .team_member p {
-  font-size: 10px;
-  font-size: 1.5vw;
+  font-size: 14px;
+  margin: 5px 0;
 }
 .team_member h4 {
-  font-size: 20px;
-  font-size: 3vw;
+  font-size: 18px;
+  margin: 10px 0 5px 0;
+  white-space: nowrap;
+}
+.team_member .email {
+  font-size: 12px;
 }
 
 .headshot {
     display: block;
-    margin:auto;
+    margin: 0 auto 15px auto;
     max-width: 100%;
-    width: 200px;
-    height: 200px;
-    max-height: 200px;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
     overflow: hidden;
     object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 /* Add specific positioning for Shrika and Pyae's images */
@@ -104,19 +111,19 @@ body, html {
       <img class="headshot" id="shrika-img" src="img/shrika.jpeg">
       <h4>Shrika Eddula</h4>
       <p>Computer Science + AI</p>
-      <p><a href="mailto:shrika@mit.edu">shrika@mit.edu</a></p>
+      <p class="email"><a href="mailto:shrika@mit.edu">shrika@mit.edu</a></p>
   </div>
   <div class="w3-card team_member">
       <img class="headshot" id="pyae-img" src="img/pyae.jpeg">
       <h4>Pyae Sone Hmine</h4>
       <p>Computer Engineering</p>
-      <p><a href="mailto:pyaesone@mit.edu">pyaesone@mit.edu</a></p>
+      <p class="email"><a href="mailto:pyaesone@mit.edu">pyaesone@mit.edu</a></p>
   </div>
   <div class="w3-card team_member">
       <img class="headshot" src="img/sammy.jpeg">
       <h4>Sammy Krem</h4>
       <p>Aerospace Engineering</p>
-      <p><a href="mailto:skrem@mit.edu">skrem@mit.edu</a></p>
+      <p class="email"><a href="mailto:skrem@mit.edu">skrem@mit.edu</a></p>
   </div>
   <div class="w3-card team_member">
       <img class="headshot" src="img/r2.jpg">

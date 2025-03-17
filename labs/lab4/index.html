@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>RSS Team 1 - Lab 4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.title_img {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../img/mit.jpg");
+  height: 30%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<!-- THESE ARE SCRIPTS FOR LATEX MATH TO RENDER-->
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']],displayMath: [['$$','$$']],skipTags: ["script","noscript","style","textarea","code"]},TeX: {equationNumbers: {autoNumber: "AMS"}}});</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../#home" class="w3-bar-item w3-button w3-wide">RSS Team 1</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../../#about" class="w3-bar-item w3-button">About</a>
+      <a href="../" class="w3-bar-item w3-button"><i class="fa fa-folder"></i>Labs</a>
+      <a href="https://github.com/mit-rss" class="w3-bar-item w3-button"><i class="fa fa-github-square"></i>Github</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close X</a>
+  <a href="../../#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="../" onclick="w3_close()" class="w3-bar-item w3-button">Labs</a>
+  <a href="https://github.com/mit-rss" onclick="w3_close()" class="w3-bar-item w3-button">Github</a>
+</nav>
+
+<header class="title_img w3-display-container w3-grayscale-min">
+  <div class="w3-display-bottommiddle w3-text-white">
+    <h1>RSS Team 1</h1>
+  </div>
+</header>
+
+<div class="w3-container w3-black" id="lab-4">
+  <div class="w3-block w3-grey w3-center" style="margin-top:64px">
+    <h1>Lab 4: Visual Servoing</h1>
+  </div>
+  <div class="w3-block w3-white" style="padding:16px 16px">
+    <!-- Links to presentation -->
+    <p><a href="https://docs.google.com/presentation/d/e/2PACX-1vRJV7rjUz3ZVsRLD-X_PHBzeKooIEk2O5C20HKBKsKwHN0OPlKZM2Zq1Eo30PhaWTo9Z8WIP9923b2t/embed?start=false&loop=false&delayms=3000">Link to Presentation</a></p>
+
+    <!-- Embedded presentation -->
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRJV7rjUz3ZVsRLD-X_PHBzeKooIEk2O5C20HKBKsKwHN0OPlKZM2Zq1Eo30PhaWTo9Z8WIP9923b2t/embed?start=false&loop=false&delayms=3000" frameborder="0" width="95%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <div class="w3-col l4 m4">
+    <a href="../" class="w3-button w3-light-grey"><i class="fa fa-arrow-left w3-margin-right"></i>Lab Home</a>
+  </div>
+  <div class="w3-col l4 m4">
+    <a href="#lab-4" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </div>
+  <div class="w3-col l4 m4">
+    <a href="../lab5" class="w3-button w3-light-grey">Next Lab<i class="fa fa-arrow-right w3-margin-right"></i></a>
+  </div>
+</footer>
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</html>
