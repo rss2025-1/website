@@ -25,52 +25,6 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
-
-/* Standardized card and image styles */
-.lab-card {
-  min-height: 600px;
-  display: flex;
-  flex-direction: column;
-}
-
-.lab-image-container {
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.lab-image {
-  width: 95%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.lab-content {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-}
-
-.lab-content h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.lab-content p {
-  margin-bottom: 10px;
-}
-
-.lab-button {
-  margin-top: 5px;
-}
-
-.lab-button .w3-button {
-  margin: 0;
-  padding: 8px 16px;
-}
 </style>
 
 <body>
@@ -108,50 +62,41 @@ body, html {
 
 <!-- Lab Sections -->
 <div class="w3-row-padding w3-white">
-    <!-- Lab 5: Monte Carlo Localization -->
-    <div class="w3-col l6 m6 w3-margin-bottom" style="margin-top:16px;max-width:50%">
-      <div class="w3-card w3-center lab-card">
-        <div class="lab-image-container">
-          <img src="../img/lab5header.png" alt="Monte Carlo Localization" class="lab-image w3-hover-opacity" onclick="onClick(this)">
-        </div>
-        <div class="lab-content">
-          <h3><a href="lab5">Lab 5: Monte Carlo Localization</a></h3>
-          <p>Implementing Monte Carlo Localization techniques for robot positioning.</p>
-          <div class="lab-button">
-            <a href="lab5"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i> More info</button></a>
-          </div>
-        </div>
+  <!-- Lab 5: Monte Carlo Localization -->
+  <div class="w3-col l6 m6 w3-margin-bottom" style="margin-top:16px;max-width:50%">
+    <div class="w3-card w3-center" style="min-height:600px">
+      </br>
+      <img src="../img/mit.jpg" alt="Monte Carlo Localization" style="width:95%" onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="w3-container" style="margin-top:auto">
+        <h3><a href="lab5">Lab 5: Monte Carlo Localization</a></h3>
+        <p>Implementing Monte Carlo Localization techniques for robot positioning.</p>
+        <p><a href="lab5"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i> More info</button></a></p>
       </div>
     </div>
-    
+  </div>
+
   <!-- Lab 4: Visual Servoing -->
   <div class="w3-col l6 m6 w3-margin-bottom" style="margin-top:16px;max-width:50%">
-    <div class="w3-card w3-center lab-card">
-      <div class="lab-image-container">
-        <img src="../img/lab4header.jpg" alt="Visual Servoing" class="lab-image w3-hover-opacity" onclick="onClick(this)">
-      </div>
-      <div class="lab-content">
+    <div class="w3-card w3-center" style="min-height:600px">
+      </br>
+      <img src="../img/mit.jpg" alt="Visual Servoing" style="width:95%" onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="w3-container" style="margin-top:auto">
         <h3><a href="lab4">Lab 4: Visual Servoing</a></h3>
         <p>Implementing visual servoing techniques for robotic control.</p>
-        <div class="lab-button">
-          <a href="lab4"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i> More info</button></a>
-        </div>
+        <p><a href="lab4"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i> More info</button></a></p>
       </div>
     </div>
   </div>
 
   <!-- Lab 3: Wall-Following -->
   <div class="w3-col l6 m6 w3-margin-bottom" style="margin-top:16px;max-width:50%">
-    <div class="w3-card w3-center lab-card">
-      <div class="lab-image-container">
-        <img src="../img/lab3header.png" alt="Wall Following" class="lab-image w3-hover-opacity" onclick="onClick(this)">
-      </div>
-      <div class="lab-content">
+    <div class="w3-card w3-center" style="min-height:600px">
+      </br>
+      <img src="../img/mit.jpg" alt="Wall Following" style="width:95%" onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="w3-container" style="margin-top:auto">
         <h3><a href="lab3">Lab 3: Wall-Following on the Racecar</a></h3>
         <p>Implementing wall-following algorithms for autonomous navigation.</p>
-        <div class="lab-button">
-          <a href="lab3"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i> More info</button></a>
-        </div>
+        <p><a href="lab3"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i> More info</button></a></p>
       </div>
     </div>
   </div>
